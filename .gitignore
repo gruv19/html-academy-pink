@@ -3,5 +3,6 @@
 .LSOverride
 .vs
 
+.ssh/
 node_modules/
 app/css/
