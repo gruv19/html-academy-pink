@@ -1,1 +1,10 @@
-@import './vars';
+@import './global/vars';
+@import './global/mixin';
+@import './global/global';
+@import './blocks/page';
+@import './blocks/page-header';
+@import './blocks/main-nav';
+@import './blocks/site-list';
+@import './blocks/intro';
+@import './blocks/slogan';
+@import './blocks/button';

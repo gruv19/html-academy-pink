@@ -1,0 +1,107 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  padding-top: 27px;
+  align-items: center;
+  @media (min-width: $tablet) {
+    padding-top: 102px;
+    width: 100%;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 65px;
+  }
+  @media (min-width: $desktop) {
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 130px;
+  }
+}
+
+.intro__header {
+  margin: 0 auto;
+  margin-bottom: 34px;
+  width: 280px;
+  @media (min-width: $tablet) {
+    box-sizing: border-box;
+    width: 325px;
+    margin: 0;
+    margin-bottom: 39px;
+    padding: 0px 40px;
+    z-index: 5;
+  }
+}
+
+.intro__demo {
+  width: 320px;
+  height: 285px;
+  @media (min-width: $tablet) {
+    width: 660px;
+    height: 545px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  @media (min-width: $desktop) {
+    height: 645px;
+    right: 0;
+    width: 1050px;
+  }
+}
+
+.intro__phone {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/phone-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (min-width: $tablet) {
+    background-image: url(../img/phone-tablet.png);
+  }
+  @media (min-width: $desktop) {
+    background-image: url(../img/phone-desktop.png);
+  }
+}
+
+.intro__main {
+  position: relative;
+  width: 120%;
+  padding: 28px 20px 38px 20px;
+  background-color: $darkBlue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 3;
+  @media (min-width: $tablet) {
+    width: 325px;
+    padding: 0;
+    background-color: transparent;
+    z-index: 1;
+  }
+}
+
+.intro__markets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__markets-logo {
+  width: 204px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 31px;
+  @media (min-width: $tablet) {
+    padding-top: 51px;
+    padding-bottom: 42px;
+  }
+}
+
+.intro__markets-desc {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  width: 280px;
+  text-align: center;
+  margin: 0;
+}

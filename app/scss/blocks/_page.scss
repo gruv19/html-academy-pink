@@ -1,0 +1,15 @@
+.page {
+  font-size: 10px;
+  @include font(400);
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}

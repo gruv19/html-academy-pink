@@ -3,20 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <title>Pink</title>
 </head>
 <body class="page__body">
   <header class="page-header">
+    <div class="page-header__background"></div>
     <div class="page-header__wrapper">
-      <a href="#" class="page-header__logo">
-        <img src="./img/logo-text.svg" width="74" height="23" alt="Pink">
-      </a>
+
+      <div class="page-header__top">
+        <a href="#" class="page-header__logo">
+        </a>
+        <button class="page-header__toggle page-header__toggle--open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      
       <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
           <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--header">
+              <div class="page-header__top">
+                <a href="#" class="page-header__logo"></a>
+                <button class="page-header__toggle page-header__toggle--close" type="button">
+                  <span class="visually-hidden">Открыть меню</span>
+                </button>
+              </div>
+            </li>
             <li class="site-list__item site-list__item--active">
               <a href="#">Главная</a>
             </li>
@@ -31,35 +44,35 @@
             </li>
           </ul>
       </nav>
+      
+      <div class="intro">
+        <div class="intro__header">
+          <h2 class="visually-hidden">Интро приложения</h2>
+          <b class="slogan slogan--intro">Взгляните на жизнь иначе!</b>
+        </div>
+        <div class="intro__main">
+          <a href="#" class="intro__download button">Скачать приложение</a>
+          <div class="intro__markets">
+            <div class="intro__markets-logo">
+              <img src="./img/apple-logo.svg" alt="Логотип Apple">
+              <img src="./img/android-logo.svg" alt="Логотип Android">
+              <img src="./img/microsoft-logo.svg" alt="Логотип Microsoft">
+            </div>
+            <p class="intro__markets-desc">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </div>
+        <div class="intro__demo">
+          <div class="intro__phone"></div>
+        </div>
+      </div>
+
     </div>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Приложение "PINK" - взгляните на мир иначе!</h1>
-    <secion class="intro">
-      <header class="intro__header">
-        <h2 class="visually-hidden">Интро приложения</h2>
-        <p class="slogan slogan--intro">Взгляните на жизнь иначе!</p>
-        <div class="intro__demo phone-demo">
-          <img src="./img/screen.jpg" alt="Экран телефона">
-          <img src="./img/phone.png" alt="Рука с телефоном">
-        </div>
-      </header>
-      <div class="intro__main">
-        <a href="#" class="intro__download button">Скачать приложение</a>
-        <div class="intro__markets markets">
-          <div class="markets__logo">
-            <img src="./img/apple-logo.svg" alt="Логотип Apple">
-            <img src="./img/android-logo.svg" alt="Логотип Android">
-            <img src="./img/microsoft-logo.svg" alt="Логотип Microsoft">
-          </div>
-          <p class="markets__desc">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </div>
-    </secion>
-
     <section class="info">
       <header class="info__header">
         <h2 class="visually-hidden">Информация о приложении</h2>
@@ -247,6 +260,24 @@
       </div>
     </div>
   </footer>
+<script>
+  const nav = document.querySelector('.main-nav');
+  const toggleBtn = document.querySelectorAll('.page-header__toggle');
 
+  toggleBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (!nav.classList.contains('animation-in') && !nav.classList.contains('animation-out')) {
+        nav.classList.toggle('animation-in');
+      } else if (nav.classList.contains('animation-in')) {
+        nav.classList.toggle('animation-in');
+        nav.classList.toggle('animation-out');
+      } else if (nav.classList.contains('animation-out')) {
+        nav.classList.toggle('animation-out');
+        nav.classList.toggle('animation-in');
+      }
+    });
+  });
+
+</script>
 </body>
 </html>

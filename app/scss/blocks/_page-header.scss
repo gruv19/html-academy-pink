@@ -1,0 +1,94 @@
+.page-header {
+  background-image: url(../img/back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: #fff;
+  @media (min-width: $tablet) {
+    background-image: url(../img/back-tablet.jpg);
+  }
+  @media (min-width: $desktop) {
+    background-image: url(../img/back-desktop.jpg);
+    // max-width: 1200px;
+    // margin: 0 auto;
+  }
+}
+
+.page-header__background {
+  position: absolute;
+  background-color: black;
+  height: 66px;
+  width: 100%;
+  top: 0;
+  opacity: 50%;
+  @media (min-width: $tablet) {
+    height: 110px;
+  }
+}
+
+.page-header__wrapper {
+  max-width: 600px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media (min-width: $tablet) {
+    max-width: 900px;
+  }
+  @media (min-width: $tablet) {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.page-header__top {
+  position: relative;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: $tablet) {
+    height: 110px;
+    width: 100%;
+  }
+  @media (min-width: $desktop) {
+    padding: 0;
+    width: 150px;
+  }
+}
+
+.page-header__logo {
+  width: 74px;
+  height: 23px;
+  background-image: url(../img/logo-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (min-width: $tablet) {
+    width: 145px;
+    height: 40px;
+    background-image: url(../img/logo-tablet.svg);
+  }
+  @media (min-width: $desktop) {
+    width: 147px;
+    height: 40px;
+    background-image: url(../img/logo-desktop.svg);
+  }
+}
+
+.page-header__toggle {
+  border: none;
+  background-color: transparent;
+  &--open {
+    background-image: url(../img/menu-btn-open.svg);
+    width: 50px;
+    height: 24px;
+  }
+  &--close {
+    background-image: url(../img/menu-btn-close.svg);
+    width: 23px;
+    height: 23px;
+  }
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
