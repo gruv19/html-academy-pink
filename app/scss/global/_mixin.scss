@@ -3,3 +3,7 @@
   font-weight: $weight;
 }
 
+@mixin helpLine($color) {
+  outline: 3px solid $color; 
+  outline-offset: -3px;
+}

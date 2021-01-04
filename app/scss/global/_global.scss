@@ -1,7 +1,18 @@
-/*img {
-  min-width: 100%;
-  height: auto;
-}*/
+// img {
+//   min-width: 100%;
+//   height: auto;
+// }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+  @media (min-width: $desktop) {
+    padding: 0 60px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
 
 .visually-hidden {
   position: absolute;
