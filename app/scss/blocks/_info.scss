@@ -1,5 +1,5 @@
 .info {
-  @include helpLine(red);
+  margin-bottom: -10px;
 }
 
 .info__header {
@@ -31,11 +31,26 @@
 }
 
 .info__main {
-  @include helpLine(blue);
+  background-color: $gray;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 43px;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    @media (min-width: $tablet) {
+      height: 70px;
+    }
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
 }
 
 .info__wrapper {
-  @include helpLine(green);
   max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
