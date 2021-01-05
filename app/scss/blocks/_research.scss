@@ -2,4 +2,92 @@
   @media (max-width: $mobile) {
     display: none;
   }
+  @media (min-width: $desktop) {
+    background-color: $gray;
+    padding-bottom: 67px;
+  }
+}
+
+.research__wrapper {
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: $desktop) {
+    max-width: 1280px;
+    padding: 0 90px;
+  }
+}
+
+.research__timer {
+  font-size: 9.6rem;
+  color: $pink;
+  @include font(700);
+  width: 238px;
+  height: 296px;
+  background-image: url(../img/timer_.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 102px;
+  padding-left: 64px;
+  @media (min-width: $desktop) {
+    width: 298px;
+    height: 345px;
+    font-size: 12rem;
+    padding-top: 102px;
+    padding-left: 82px;
+  }
+}
+
+.research__desc {
+  width: 305px;
+  margin-top: 50px;
+  @media (min-width: $desktop) {
+    margin-top: 80px;
+    width: 525px;
+  }
+}
+
+.research__header {
+  @include font(700);
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: #000;
+  margin-bottom: 19px;
+  @media (min-width: $desktop) {
+    background-color: $gray;
+    margin-bottom: 24px;
+    br {
+      display: none;
+    }
+  }
+}
+
+.research__text {
+  @include font(400);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: $darkBlue;
+  margin-bottom: 19px;
+  @media (min-width: $desktop) {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 24px;
+  }
+}
+
+.research__more {
+  @include font(400);
+  font-size: 1.4rem;
+  color: $pink;
+  @media (min-width: $desktop) {
+    font-size: 1.8rem;
+  }
+  &:hover {
+    color: $darkBlue;
+  }
+  &:active {
+    color: rgba($darkBlue, .3)
+  }
 }
