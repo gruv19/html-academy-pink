@@ -154,72 +154,65 @@
 
     <section class="prices">
       <h2 class="visually-hidden">Тарифы приложения</h2>
-      <div class="prices__table table slider">
-        <div class="table__coll visually-hidden">
-          <div class="table__cell table__cell--empty"></div>
-          <div class="table__cell visually-hidden">Розовый фильтр</div>
-          <div class="table__cell visually-hidden">Смайлики</div>
-          <div class="table__cell visually-hidden">Комментарии</div>
+      <div class="prices__wrapper">
+        <div class="prices__table slider">
+          <header class="prices__table-col">
+            <div class="prices__table-cell prices__table-cell--empty"></div>
+            <div class="prices__table-cell">Розовый фильтр</div>
+            <div class="prices__table-cell">Смайлики</div>
+            <div class="prices__table-cell">Комментарии</div>
+          </header>
+          <div class="prices__table-col slider__item">
+            <div class="prices__table-cell prices__table-cell--head">
+              <p class="prices__cell-title">БАЗА</p>
+              <span class="prices__cell-price">1,99 USD</span>
+            </div>
+            <div class="prices__table-cell prices__table-cell--positive">
+              <span class="prices__cell-name">Розовый фильтр</span>
+            </div>
+            <div class="prices__table-cell prices__table-cell--negative">
+              <span class="prices__cell-name">Смайлики</span>
+            </div>
+            <div class="prices__table-cell prices__table-cell--negative">
+              <span class="prices__cell-name">Комментарии</span>
+            </div>
+          </div>
+          <div class="prices__table-col prices__slide">
+            <div class="prices__table-cell prices__table-cell--head prices__table-cell--hit">
+              <p class="prices__cell-title">СТАНДАРТ</p>
+              <span class="prices__cell-price">3,99 USD</span>
+            </div>
+            <div class="prices__table-cell prices__table-cell--positive">
+              <span class="prices__cell-name">Розовый фильтр</span>
+            </div>
+            <div class="prices__table-cell prices__table-cell--positive">
+              <span class="prices__cell-name">Смайлики</span>
+            </div>
+            <div class="prices__table-cell prices__table-cell--negative">
+              <span class="prices__cell-name">Комментарии</span>
+            </div>
+          </div>
+          <div class="prices__table-col slider__item">
+            <div class="prices__table-cell prices__table-cell--head">
+              <p class="prices__cell-title">АНЛИМ</p>
+              <span class="prices__cell-price">9,99 USD</span>
+            </div>
+            <div class="prices__table-cell prices__table-cell--positive">
+              <span class="prices__cell-name">Розовый фильтр</span>
+            </div>
+            <div class="prices__table-cell prices__table-cell--positive">
+              <span class="prices__cell-name">Смайлики</span>
+            </div>
+            <div class="prices__table-cell prices__table-cell--positive">
+              <span class="prices__cell-name">Комментарии</span>
+            </div>
+          </div>
+          <p class="prices__toggles slider__toggles">
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--active" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+          </p>
         </div>
-        <div class="table__coll slider__item">
-          <div class="table__cell table__cell--head">
-            <p class="table__cell-title">БАЗА</p>
-            <span class="table__cell-price">1,99 USD</span>
-          </div>
-          <div class="table__cell ">
-            <span class="table__cell-name">Розовый фильтр</span>
-            <span class="table__cell-positive"></span>
-          </div>
-          <div class="table__cell">
-            <span class="table__cell-name">Смайлики</span>
-            <span class="table__cell-negative"></span>
-          </div>
-          <div class="table__cell">
-            <span class="table__cell-name">Комментарии</span>
-            <span class="table__cell-negative"></span>
-          </div>
-        </div>
-        <div class="table__coll slider__item">
-          <div class="table__cell table__cell--head table__cell--hit">
-            <p class="table__cell-title">СТАНДАРТ</p>
-            <span class="table__cell-price">3,99 USD</span>
-          </div>
-          <div class="table__cell">
-            <span class="table__cell-name">Розовый фильтр</span>
-            <span class="table__cell-positive"></span>
-          </div>
-          <div class="table__cell">
-            <span class="table__cell-name">Смайлики</span>
-            <span class="table__cell-positive"></span>
-          </div>
-          <div class="table__cell">
-            <span class="table__cell-name">Комментарии</span>
-            <span class="table__cell-negative"></span>
-          </div>
-        </div>
-        <div class="table__coll slider__item">
-          <div class="table__cell table__cell--head">
-            <p class="table__cell-title">АНЛИМ</p>
-            <span class="table__cell-price">9,99 USD</span>
-          </div>
-          <div class="table__cell">
-            <span class="table__cell-name">Розовый фильтр</span>
-            <span class="table__cell-positive"></span>
-          </div>
-          <div class="table__cell">
-            <span class="table__cell-name">Смайлики</span>
-            <span class="table__cell-positive"></span>
-          </div>
-          <div class="table__cell">
-            <span class="table__cell-name">Комментарии</span>
-            <span class="table__cell-positive"></span>
-          </div>
-        </div>
-        <p class="table__coll-toggles slider__toggles">
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle slider__toggle--active" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-        </p>
       </div>
     </section>
   </main>
