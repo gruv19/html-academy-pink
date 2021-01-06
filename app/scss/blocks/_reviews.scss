@@ -1,0 +1,125 @@
+.reviews {
+  // @include helpLine(red);
+  padding-top: 7px;
+  padding-bottom: 60px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    border-bottom: 40px solid $gray;
+    border-left: 100vw solid transparent;
+    width: 100%;
+    bottom: 0;
+  }
+  @media (min-width: $tablet) {
+    padding-top: 100px;
+    &:after {
+      border-bottom: 50px solid $gray;
+    }
+  }
+  @media (min-width: $desktop) {
+    padding-top: 65px;
+    &:after {
+      border-bottom: 100px solid $gray;
+    }
+  }
+}
+
+.reviews__wrapper {
+  // @include helpLine(blue);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: $tablet) {
+    max-width: 900px;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1280px;
+    padding: 0 60px;
+  }
+}
+
+.reviews__list {
+  // @include helpLine(green);
+  margin-bottom: 44px;
+  position: relative;
+  @media (min-width: $tablet) {
+    margin-bottom: 41px;
+  }
+  @media (min-width: $desktop) {
+    padding-top: 121px;
+  }
+}
+
+.reviews__list::before {
+  @media (min-width: $desktop) {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/quotes.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    top: 0;
+  }
+}
+
+.reviews__item {
+  // @include helpLine(pink);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet) {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0px 30px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0px 100px;
+  }
+}
+
+.reviews__author-name {
+  font-size: 1.8rem;
+  @include font(700);
+  padding-bottom: 17px;
+  @media (min-width: $tablet) {
+    padding-bottom: 4px;
+    padding-top: 40px;
+    font-size: 2rem;
+  }
+  @media (min-width: $desktop) {
+    padding-top: 50px;
+    font-size: 2.4rem;
+  }
+}
+
+.reviews__author-info {
+  display: none;
+  @media (min-width:$tablet) {
+    display: block;
+    color: $darkBlue;
+    font-size: 1.4rem;
+    @include font(400);
+  }
+  @media (min-width:$tablet) {
+    font-size: 1.8rem;
+  }
+}
+
+.reviews__text {
+  margin: 0;
+  font-size: 1.4rem;
+  @include font(400);
+  line-height: 3rem;
+  color: $darkBlue;
+  @media (min-width:$tablet) {
+    font-size: 1.8rem;
+  }
+}
+
+// .reviews__buttons {
+//   @media (max-width: $desktop) {
+//     display: none;
+//   }
+// }
