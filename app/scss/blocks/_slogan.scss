@@ -26,7 +26,7 @@
 .slogan--info {
   color: $darkBlue;
   padding-bottom: 30px;
-  width: 345px;
+  width: 100%;
   margin: 0 auto;
   &:last-child {
     padding-bottom: 0;
@@ -43,4 +43,10 @@
       display: none;
     }
   }
+}
+
+.slogan--contacts {
+  color: $darkBlue;
+  width: 100%;
+  margin: 0 auto;
 }
