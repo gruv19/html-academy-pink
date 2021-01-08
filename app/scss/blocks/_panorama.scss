@@ -1,0 +1,34 @@
+.panorama__img-block {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.panorama__label {
+  padding: 13px 20px;
+  background-color: $pink;
+  text-transform: uppercase;
+  @include font(700);
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.panorama__wrapper-abs {
+  position: absolute;
+  max-width: 600px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 13px 20px;
+  text-align: right;
+  @media (min-width: $tablet) {
+    padding-top: 70px;
+    max-width: 900px;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1280px;
+    padding: 67px 60px;
+  }
+}

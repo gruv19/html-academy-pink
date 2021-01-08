@@ -1,0 +1,124 @@
+.article {
+  display: flex;
+}
+
+.article__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 600px;
+  @media (min-width: $tablet) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
+}
+
+.article__wrapper--panorama {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: $tablet) {
+    max-width: 900px;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1280px;
+    padding: 0 60px;
+  }
+}
+
+.article__content {
+  background-color: $gray;
+  padding: 25px 10px 26px 17px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.article__content--panorama {
+  @media (min-width: $tablet) {
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.article__header {
+  margin-bottom: 14px;
+  @media (min-width: $tablet) {}
+}
+
+.article__author {
+  @include font(700);
+  font-size: 1.4rem;
+  color: $darkBlue;
+}
+
+.article__create-time {
+  @include font(300);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: $darkBlue;
+}
+
+.article__text {
+  @include font(400);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: $darkBlue;
+  margin: 0;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.article__text--panorama {
+  @media (min-width: $tablet) {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.article__likes {
+  color: $pink;
+  @include font(400);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+  }
+}
+
+.article__likes--panorama {
+  @media (min-width: $tablet) {
+    justify-content:unset;
+  }
+}
+
+.article__heart {
+  width: 13px;
+  height: 12px;
+  background-image: url(../img/heart.svg);
+  display: inline-block;
+  margin-right: 18px;
+  @media (min-width: $tablet) {
+    order: 1;
+  }
+}
+
+.article__heart--panorama {
+  @media (min-width: $tablet) {
+    margin-right: 0;
+    margin-left: 16px;
+  }
+}
+
+.article__likes-count {
+  margin-left: 4px;
+}

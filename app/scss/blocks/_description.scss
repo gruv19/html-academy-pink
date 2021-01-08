@@ -1,0 +1,28 @@
+.description {
+  margin: 0 auto;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  @media (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 85px;
+  }
+  @media (min-width: $desktop) {
+    padding-bottom: 97px;
+  }
+}
+
+.description__text {
+  font-size: 1.4rem;
+  @include font(400);
+  line-height: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 250px;
+  @media (min-width: $tablet) {
+    font-size: 1.8rem;
+    width: 550px;
+  }
+  @media (min-width: $desktop) {
+    width: 575px;
+  }
+}

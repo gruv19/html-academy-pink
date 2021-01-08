@@ -2,6 +2,7 @@
 .AppleDouble
 .LSOverride
 .vs
+debug.log
 
 .ssh/
 node_modules/

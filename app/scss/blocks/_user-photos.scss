@@ -1,0 +1,27 @@
+.user-photos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (min-width: $tablet) {
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1280px;
+    padding: 0 60px;
+  }
+}
+
+.user-photos__article {
+  margin-top: 20px;
+  flex-basis: 100%;
+  @media (min-width: $tablet) {
+    flex-basis: 49%;
+    max-width: 450px;
+  }
+  @media (min-width: $desktop) {
+    flex-basis: 30%;
+    max-width: 450px;
+  }
+}

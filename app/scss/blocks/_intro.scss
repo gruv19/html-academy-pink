@@ -106,6 +106,7 @@
   width: 204px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 38px;
   padding-bottom: 31px;
   @media (min-width: $tablet) {
@@ -113,6 +114,28 @@
     padding-bottom: 42px;
   }
 }
+
+.intro__market-link {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background-image: url(../img/apple-logo.svg);
+  }
+  &--android {
+    width: 43px;
+    height: 47px;
+    background-image: url(../img/android-logo.svg);
+  }
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background-image: url(../img/microsoft-logo.svg);
+  }
+}
+
 
 .intro__markets-desc {
   font-size: 1.4rem;
