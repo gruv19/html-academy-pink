@@ -155,21 +155,50 @@
 .page-header__logo {
   width: 74px;
   height: 23px;
-  background-image: url(../img/logo-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 5;
+  fill: #fff;
+  &:hover {
+    fill: $pink;
+  }
+  &:active {
+    fill: rgba(#fff, .3)
+  }
+  // background-image: url(../img/logo-mobile.svg);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // z-index: 5;
   @media (min-width: $tablet) {
     width: 145px;
     height: 40px;
-    background-image: url(../img/logo-tablet.svg);
+    // background-image: url(../img/logo-tablet.svg);
   }
   @media (min-width: $desktop) {
     width: 147px;
     height: 40px;
-    background-image: url(../img/logo-desktop.svg);
+    // background-image: url(../img/logo-desktop.svg);
   }
 }
+
+.page-header__logo-svg--mobile {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+.page-header__logo-svg--tablet {
+  display: none;
+  @media (min-width: $tablet) {
+    display: inline-block;
+  }
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+.page-header__logo-svg--desktop {
+  display: none;
+  @media (min-width: $desktop) {
+    display: inline-block;
+  }
+}
+
 
 .page-header__toggle {
   width: 50px;

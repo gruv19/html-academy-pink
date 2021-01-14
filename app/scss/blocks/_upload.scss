@@ -83,6 +83,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  fill: $pink;
+  @media (max-width: $mobile) {
+    &:hover {
+      fill: rgba($darkBlue, .3);
+    }
+    &--active {
+      fill: rgba($darkBlue, .5);
+    }
+    &--active:hover {
+      fill: rgba($darkBlue, .5);
+    }
+  }
   @media (min-width: $tablet) {
     width: 22px;
     height: auto;
@@ -96,13 +108,13 @@
     }
   }
   &--crop {
-    background-image: url(../img/crop.svg);
+    // background-image: url(../img/crop.svg);
   }
   &--fill {
-    background-image: url(../img/fill.svg);
+    // background-image: url(../img/fill.svg);
   }
   &--contrast {
-    background-image: url(../img/contrast.svg);
+    // background-image: url(../img/contrast.svg);
   }
 }
 
@@ -157,6 +169,9 @@
   margin-top: -6px;
   background-color: #fff;
 }
+.upload__range::-webkit-slider-thumb:active {
+  background-color: $pink;
+}
 
 .upload__buttons {
   display: flex;
@@ -196,9 +211,24 @@
     @media (min-width: $desktop) {
       margin-bottom: 0;
     }
+    &:hover{
+      color: #fff;
+      background-color: $pink;
+    }
+    &:active{
+      color: rgba(#fff, .3);
+    }
   }
   &--reset {
     border: 2px solid rgba($darkBlue, .1);
     color: rgba($darkBlue, .1);
+    &:hover{
+      border-color: rgba($darkBlue, .3);
+      color: rgba($darkBlue, .3);
+    }
+    &:active{
+      color: rgba(#fff, .3);
+      background-color: rgba($darkBlue, .3);
+    }
   }
 }

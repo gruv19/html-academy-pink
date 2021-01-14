@@ -48,9 +48,13 @@
   color: $pink;
   font-size: 2.4rem;
   @include font(300);
-  a:hover {
+  &:hover {
     text-decoration: underline;
     color: $darkBlue;
+  }
+  &:active {
+    text-decoration: none;
+    color: rgba($darkBlue, .3);
   }
 }
 

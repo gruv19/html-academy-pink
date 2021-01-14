@@ -42,6 +42,14 @@
     &:nth-child(1) {
       box-shadow: none;
     }
+    &--active {
+      a:hover{
+        color: #fff;
+      }
+      a:active {
+        color: #fff;
+      }
+    }
     &--active::after {
       content: '';
       position: absolute;

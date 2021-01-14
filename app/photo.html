@@ -8,24 +8,33 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Pink-Фотографии пользователей</title>
 </head>
-
 <body class="page__body">
-  <header class="page-header">
-    <div class="page-header__bg"></div>
+  <header class="page-header">    
+  <div class="page-header__bg"></div>
     <div class="container">
       <div class="page-header__menu page-header__menu--closed page-header__menu--nojs">
         <div class="page-header__top">
-          <a href="index.html" class="page-header__logo"></a>
+          <a href="index.html" class="page-header__logo">
+            <svg class="page-header__logo-svg page-header__logo-svg--mobile" width="74" height="23">
+              <use xlink:href="./img/logo-sprite.svg#logo-mobile"></use>
+            </svg>
+            <svg class="page-header__logo-svg page-header__logo-svg--tablet" width="145" height="40">
+              <use xlink:href="./img/logo-sprite.svg#logo-tablet"></use>
+            </svg>
+            <svg class="page-header__logo-svg page-header__logo-svg--desktop" width="147" height="40">
+              <use xlink:href="./img/logo-sprite.svg#logo-desktop"></use>
+            </svg>
+          </a>
           <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
@@ -254,9 +263,21 @@
         <form action="#" class="upload__form">
           <div class="upload__inputs">
             <div class="upload__labels">
-              <label for="crop" class="upload__label upload__label--crop"></label>
-              <label for="fill" class="upload__label upload__label--fill"></label>
-              <label for="contrast" class="upload__label upload__label--contrast"></label>
+              <label for="crop" class="upload__label upload__label--crop upload__label--active">
+                <svg class="upload__label-svg" width="44" height="44">
+                  <use xlink:href="./img/filters-label.svg#crop"></use>
+                </svg>
+              </label>
+              <label for="fill" class="upload__label upload__label--fill">
+                <svg class="upload__label-svg" width="44" height="42">
+                  <use xlink:href="./img/filters-label.svg#fill"></use>
+                </svg>
+              </label>
+              <label for="contrast" class="upload__label upload__label--contrast">
+                <svg class="upload__label-svg" width="44" height="44">
+                  <use xlink:href="./img/filters-label.svg#contrast"></use>
+                </svg>
+              </label>
             </div>
             <div class="upload__ranges">
               <input type="range" class="upload__range upload__range--active" name="crop" id="crop">
@@ -276,23 +297,46 @@
 
   <footer class="page-footer">
     <div class="page-footer__bottom bottom">
-      <a href="#" class="bottom__logo"></a>
+      <a href="#" class="bottom__logo">
+        <svg class="bottom__logo-svg bottom__logo-svg--desktop" width="147" height="40">
+          <use xlink:href="./img/footer-logo-sprite.svg#footer-logo-desktop"></use>
+        </svg>
+        <svg class="bottom__logo-svg bottom__logo-svg--mobile" width="145" height="40">
+          <use xlink:href="./img/footer-logo-sprite.svg#footer-logo-mobile"></use>
+        </svg>
+      </a>
       <div class="bottom__socials">
         <ul class="bottom__socials-list">
           <li class="bottom__socials-item">
-            <a href="#" class="bottom__socials-link bottom__socials-link--twitter"></a>
+            <a href="#" class="bottom__socials-link">
+              <svg class="bottom__socials-svg" width="18" height="14">
+                <use xlink:href="./img/socials-sprite.svg#twitter"></use>
+              </svg>
+            </a>
           </li>
           <li class="bottom__socials-item">
-            <a href="#" class="bottom__socials-link bottom__socials-link--facebook"></a>
+            <a href="#" class="bottom__socials-link">
+              <svg class="bottom__socials-svg" width="9" height="18">
+                <use xlink:href="./img/socials-sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="bottom__socials-item">
-            <a href="#" class="bottom__socials-link bottom__socials-link--youtube"></a>
+            <a href="#" class="bottom__socials-link">
+              <svg class="bottom__socials-svg" width="15" height="13">
+                <use xlink:href="./img/socials-sprite.svg#youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="bottom__copyright">
         <span class="bottom__copyright-text">Разработано</span>
-        <a href="#" class="bottom__copyright-link"></a>
+        <a href="#" class="bottom__copyright-link">
+          <svg class="bottom__copyright-svg" width="27" height="34">
+            <use xlink:href="./img/html-academy.svg#html-academy-svg"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
