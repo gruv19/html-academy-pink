@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Pink-Конкурс</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">    
+    <div class="page-header__bg"></div>
+    <div class="container">
+      <div class="page-header__menu page-header__menu--closed page-header__menu--nojs">
+        <div class="page-header__top">
+          <a href="index.html" class="page-header__logo">
+            <svg class="page-header__logo-svg page-header__logo-svg--mobile" width="74" height="23">
+              <use xlink:href="./img/logo-sprite.svg#logo-mobile"></use>
+            </svg>
+            <svg class="page-header__logo-svg page-header__logo-svg--tablet" width="145" height="40">
+              <use xlink:href="./img/logo-sprite.svg#logo-tablet"></use>
+            </svg>
+            <svg class="page-header__logo-svg page-header__logo-svg--desktop" width="147" height="40">
+              <use xlink:href="./img/logo-sprite.svg#logo-desktop"></use>
+            </svg>
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  
+    <div class="page-header__title">
+      <h1 class="title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+
+  </header>
+
+  <main class="page-main">
+    <section class="description">
+      <h2 class="visually-hidden">Преамбула блока</h2>
+      <div class="description__text">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="description__text--not-mobile">Пожалуйста, заполните форму ниже:</span>
+      </div>
+    </section>
+
+    <section class="contest">
+      <div class="contest__wrapper">
+        <form method="POST" action="" class="contest__form">
+          <div class="contest__user-fullname">
+            <div class="contest__block-wrapper">
+              <p class="contest__fullname-item">
+                <label class="contest__subtitle contest__fullname-label" for="user-surname">Фамилия:</label>
+                <input type="text" name="user-surname" id="user-surname" class="contest__input contest__input--user-surname" placeholder="Укажите фамилию *">
+              </p>
+              <p class="contest__fullname-item">
+                <label class="contest__subtitle contest__fullname-label" for="user-name">Имя:</label>
+                <input type="text" name="user-name" id="user-name" class="contest__input contest__input--user-name" placeholder="Укажите ваше имя *">
+              </p>
+              <p class="contest__fullname-item">
+                <label class="contest__subtitle contest__fullname-label" for="user-patronymic">Отчество:</label>
+                <input type="text" name="user-patronymic" id="user-patronymic" class="contest__input contest__input--user-patronymic" placeholder="Ну и отчество тоже">
+              </p>
+            </div>
+          </div>
+          <div class="contest__achievs">
+            <div class="contest__block-wrapper">
+              <fieldset class="contest__fieldset contest__achievs-fieldset">
+                <legend class="contest__subtitle contest__subtitle--legend">Ваши безбашенные достижения в путешествии</legend>
+                <p class="contest__achievs-item">
+                  <input type="checkbox" class="contest__check" name="selfie" id="selfie" value="1" checked>
+                  <label class="contest__achievs-label" for="selfie">Сделал селфи с акулой</label>
+                </p>
+                <p class="contest__achievs-item">
+                  <input type="checkbox" class="contest__check" name="beach" id="beach" value="1" checked>
+                  <label class="contest__achievs-label" for="beach">Обгорел на пляже</label>
+                </p>
+                <p class="contest__achievs-item">
+                  <input type="checkbox" class="contest__check" name="meeting" id="meeting" value="1">
+                  <label class="contest__achievs-label" for="meeting">Видел Чака Норриса</label>
+                </p>
+                <p class="contest__achievs-item">
+                  <input type="checkbox" class="contest__check" name="buy" id="buy" value="1">
+                  <label class="contest__achievs-label" for="buy">Накупил сувениров</label>
+                </p>
+                <p class="contest__achievs-item">
+                  <input type="checkbox" class="contest__check" name="tower" id="tower" value="1" checked>
+                  <label class="contest__achievs-label" for="tower">Удержал башню</label>
+                </p>
+                <p class="contest__achievs-item">
+                  <input type="checkbox" class="contest__check" name="hotel" id="hotel" value="1">
+                  <label class="contest__achievs-label" for="hotel">Разгромил отель</label>
+                </p>
+              </fieldset>
+            </div>
+          </div>
+          <div class="contest__user-contacts">
+            <div class="contest__block-wrapper">
+              <fieldset class="contest__fieldset contest__contacts-fieldset">
+                <legend class="contest__subtitle contest__subtitle--not-mobile contest__subtitle--legend">Контакная информация</legend>
+                <p class="contest__contacts-item">
+                  <label class="contest__subtitle contest__contacts-label contest__contacts-label--phone" for="user-phone">Номер телефона</label>
+                  <input type="tel" name="user-phone" id="user-phone" class="contest__input contest__input--user-phone" placeholder="Номер, пожалуйста">
+                </p>
+                <p class="contest__contacts-item">
+                  <label class="contest__subtitle contest__contacts-label contest__contacts-label--email" for="user-email">Адрес почты</label>
+                  <input type="text" name="user-email" id="user-email" class="contest__input contest__input--user-email" placeholder="Введите почту *">
+                </p>
+              </fieldset>
+            </div>
+          </div>
+          <div class="contest__apps">
+            <div class="contest__block-wrapper">
+              <fieldset class="contest__fieldset contest__apps-fieldset">
+                <legend class="contest__subtitle contest__subtitle--legend">С какими приложениями путешествовали?</legend>
+                <p class="contest__apps-item">
+                  <input type="radio" class="contest__radio" name="contest-app" id="app-ios" checked>
+                  <label class="contest__apps-label" for="app-ios">Pink для iOS</label>
+                </p>
+                <p class="contest__apps-item">
+                  <input type="radio" class="contest__radio" name="contest-app" id="app-android">
+                  <label class="contest__apps-label" for="app-android">Pink на Android</label>
+                </p>
+                <p class="contest__apps-item">
+                  <input type="radio" class="contest__radio" name="contest-app" id="app-windows">
+                  <label class="contest__apps-label" for="app-windows">Windows Phone</label>
+                </p>
+              </fieldset>
+            </div>
+          </div>
+          <div class="contest__emotions">
+            <div class="contest__block-wrapper">
+              <fieldset class="contest__fieldset contest__emotions-fieldset">
+                <legend class="contest__subtitle contest__subtitle--legend">Опиши свои эмоции</legend>
+                <textarea name="emotions" id="_emotions" class="contest__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+            </div>
+          </div>
+          <div class="contest__submit">
+            <div class="contest__block-wrapper contest__flex-container">
+              <button type="submit" class="contest__btn">Отправить форму</button>
+              <p class="contest__snoska">
+                <span class="contest__star">*</span> — обязательные <span class="contest__full">для заполнения</span> поля
+              </p>
+            </div>
+          </div>
+        </form>
+        <div class="contest__popup popup">
+          <header class="popup__header">Что-то пошло не так!</header>
+          <p class="popup__message">
+            Проверьте поля, выделенные
+            красным, скорее всего вы забыли
+            их заполнить
+          </p>
+          <button class="popup__btn">ОК</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__bottom bottom">
+      <a href="#" class="bottom__logo">
+        <svg class="bottom__logo-svg bottom__logo-svg--desktop" width="147" height="40">
+          <use xlink:href="./img/footer-logo-sprite.svg#footer-logo-desktop"></use>
+        </svg>
+        <svg class="bottom__logo-svg bottom__logo-svg--mobile" width="145" height="40">
+          <use xlink:href="./img/footer-logo-sprite.svg#footer-logo-mobile"></use>
+        </svg>
+      </a>
+      <div class="bottom__socials">
+        <ul class="bottom__socials-list">
+          <li class="bottom__socials-item">
+            <a href="#" class="bottom__socials-link">
+              <svg class="bottom__socials-svg" width="18" height="14">
+                <use xlink:href="./img/socials-sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="bottom__socials-item">
+            <a href="#" class="bottom__socials-link">
+              <svg class="bottom__socials-svg" width="9" height="18">
+                <use xlink:href="./img/socials-sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="bottom__socials-item">
+            <a href="#" class="bottom__socials-link">
+              <svg class="bottom__socials-svg" width="15" height="13">
+                <use xlink:href="./img/socials-sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom__copyright">
+        <span class="bottom__copyright-text">Разработано</span>
+        <a href="#" class="bottom__copyright-link">
+          <svg class="bottom__copyright-svg" width="27" height="34">
+            <use xlink:href="./img/html-academy.svg#html-academy-svg"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const nav = document.querySelector('.page-header__menu');
+    const toggleBtn = document.querySelector('.page-header__toggle');
+    const navBg = document.querySelector('.page-header__bg');
+
+    nav.classList.remove('page-header__menu--nojs');
+    toggleBtn.addEventListener('click', () => {
+      console.log(nav);
+      navBg.classList.toggle('page-header__bg--menu-open');
+      if (nav.classList.contains('page-header__menu--closed')) {
+        nav.classList.remove('page-header__menu--closed');
+        nav.classList.add('page-header__menu--open');
+      } else if (nav.classList.contains('page-header__menu--open')) {
+        nav.classList.remove('page-header__menu--open');
+        nav.classList.add('page-header__menu--closed');
+      }
+    });
+  </script>
+</body>
+</html>

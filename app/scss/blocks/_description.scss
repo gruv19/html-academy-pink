@@ -18,6 +18,11 @@
   text-align: center;
   margin: 0 auto;
   width: 250px;
+  @media (max-width: $mobile) {
+    &--not-mobile {
+      display: none;
+    }
+  }
   @media (min-width: $tablet) {
     font-size: 1.8rem;
     width: 550px;
