@@ -7,3 +7,4 @@ debug.log
 .ssh/
 node_modules/
 app/css/
+build/
