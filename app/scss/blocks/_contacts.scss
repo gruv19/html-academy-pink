@@ -1,5 +1,4 @@
 .contacts {
-  // @include helpLine(red);
   padding-top: 50px;
   padding-bottom: 41px;
   @media (min-width: $tablet) {
@@ -71,8 +70,6 @@
   }
 }
 
-.contacts__phone-mobile {}
-
 .contacts__email {
   margin-bottom: 35px;
   @media (min-width: $tablet) {
@@ -83,8 +80,6 @@
     grid-column-end: 4;
   }
 }
-
-.contacts__email-address {}
 
 .contacts__address {
   @media (min-width: $tablet) {

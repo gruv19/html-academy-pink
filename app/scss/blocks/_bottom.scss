@@ -19,7 +19,6 @@
 
 .bottom__logo {
   margin-bottom: 40px;
-  // background-image: url(../img/footer-logo-mobile.svg);
   width: 145px;
   height: 40px;
   display: block;
@@ -36,7 +35,6 @@
   }
   @media (min-width: $desktop) {
     width: 147px;
-    // background-image: url(../img/footer-logo-desktop.svg);
   }
 }
 
@@ -144,9 +142,6 @@
 .bottom__copyright-link {
   width: 27px;
   height: 34px;
-  // background-image: url(../img/html-academy.svg);
-  // background-position: center;
-  // background-repeat: no-repeat;
   display: block;
   fill: $pink;
   &:hover {

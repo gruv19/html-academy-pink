@@ -44,7 +44,6 @@
   @media (min-width: $desktop) {
     max-width: 410px;
   }
-  // align-items: center;
 }
 
 .upload__inputs {
@@ -106,15 +105,6 @@
     &:last-child {
       border-bottom: none;
     }
-  }
-  &--crop {
-    // background-image: url(../img/crop.svg);
-  }
-  &--fill {
-    // background-image: url(../img/fill.svg);
-  }
-  &--contrast {
-    // background-image: url(../img/contrast.svg);
   }
 }
 

@@ -1,5 +1,3 @@
-.contest {}
-
 .contest__wrapper {
   position: relative;
   @media (min-width: $desktop) {
@@ -101,37 +99,11 @@
     margin-right: 20px;
   }
 }
-// max-width: 600px;
-// margin: 0 auto;
-// padding: 0 20px;
-// @media (min-width: $tablet) {
-//   max-width: 900px;
-// }
-// @media (min-width: $desktop) {
-//   max-width: 1280px;
-//   padding: 0 60px;
-// }
 
 .contest__check {
   position: absolute;
   z-index: -1;
   opacity: 0;
-  // &+label {
-    // display: inline-flex;
-    // display: flex;
-    // align-items: center;
-    // user-select: none;
-  // }
-  // &+label::before {
-  //   content: '';
-  //   display: inline-block;
-  //   width: 35px;
-  //   height: 35px;
-  //   // flex-grow: 0;
-  //   // flex-shrink: 0;
-  //   border: 2px solid #E5E5E5;
-  //   margin-right: 22px;
-  // }
 }
 
 .contest__achievs-fieldset {
@@ -156,8 +128,6 @@
   display: inline-block;
   width: 35px;
   height: 35px;
-  // flex-grow: 0;
-  // flex-shrink: 0;
   border: 2px solid #E5E5E5;
   border-radius: 3px;
   margin-right: 22px;
@@ -204,7 +174,6 @@
 }
 
 .contest__user-fullname {
-  // @include helpLine(red);
   order: 1;
   margin-bottom: 55px;
   @media (min-width: $tablet) {}
@@ -216,7 +185,6 @@
 }
 
 .contest__achievs {
-  // @include helpLine(blue);
   background-color: $gray;
   order: 2;
   padding: 42px 0 0;
@@ -232,7 +200,6 @@
 }
 
 .contest__user-contacts {
-  // @include helpLine(pink);
   order: 3;
   @media (min-width: $tablet) {}
   @media (min-width: $desktop) {
@@ -242,7 +209,6 @@
 }
 
 .contest__apps {
-  // @include helpLine(green);
   background-color: $gray;
   order: 4;
   @media (min-width: $tablet) {
@@ -255,7 +221,6 @@
 }
 
 .contest__emotions {
-  // @include helpLine(orange);
   order: 5;
   @media (min-width: $tablet) {}
   @media (min-width: $desktop) {
@@ -309,7 +274,6 @@
       width: 59px;
       height: 55px;
       background-color: #E5E5E5;
-      // background-color: blue;
       bottom: 38px;
       right: 2px;
       z-index: 1;
@@ -325,8 +289,6 @@
   }
 }
 
-// @media (min-width: $tablet) {
-// @media (min-width: $desktop) {
 .contest__input--user-phone {
   position: relative;
 }
@@ -341,8 +303,6 @@
     padding: 0;
   }
 }
-
-.contest__apps-fieldset {}
 
 .contest__apps-item {
   margin: 0;
@@ -373,6 +333,7 @@
     margin-right: 22px;
   }
 }
+
 
 .contest__radio:hover+.contest__apps-label::before {
   border-color: $darkBlue;
@@ -431,7 +392,6 @@
 .contest__flex-container {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   align-items: center;
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -492,7 +452,6 @@
   position: absolute;
   z-index: 10;
   bottom: 1075px;
-  // display: none;
   @media (min-width: $tablet) {
     margin-left: 50%;
     transform: translateX(-50%);

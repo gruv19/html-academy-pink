@@ -162,19 +162,13 @@
   &:active {
     fill: rgba(#fff, .3)
   }
-  // background-image: url(../img/logo-mobile.svg);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // z-index: 5;
   @media (min-width: $tablet) {
     width: 145px;
     height: 40px;
-    // background-image: url(../img/logo-tablet.svg);
   }
   @media (min-width: $desktop) {
     width: 147px;
     height: 40px;
-    // background-image: url(../img/logo-desktop.svg);
   }
 }
 

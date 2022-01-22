@@ -26,9 +26,6 @@
 }
 
 .prices__table {
-  // @include helpLine(red);
-  // display: grid;
-  // grid-template-columns: repeat(3, 90%);
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -109,14 +106,9 @@
       color: #fff;
       text-align: center;
       height: 85px;
-      // text-align: center;
       border: none;
       padding-top: 19px;
       padding-bottom: 16px;
-      // & + & {
-      //   border-right: 1px solid red;
-      //   border-left: 1px solid red;
-      // }
     }
     &--positive {
       background-position: center;
@@ -152,7 +144,6 @@
       left: -40%;
       top: 13%;
     }
-    // @media (min-width: $desktop) {}
   }
 }
 
